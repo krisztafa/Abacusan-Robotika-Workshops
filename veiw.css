@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url(assets/robotos%20h%C3%A1tt%C3%A9r.jpg6.jpg) no-repeat center/cover fixed;
+	text-align: center;
+}
+
+#center {
+	padding-top: 15rem;
+}
+
+img {
+	width: 70%;
+}
+
+header h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2rem;
+	font-weight: 700;
+	text-shadow: 3px -5px 2px white;
+	line-height: 5rem;
+}
+
+@media (min-width: 768px) {
+
+	#center {
+		padding-top: 14rem;
+	}
+
+	header h1 {
+		text-shadow: 3px -5px 2px white;
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	#center {
+		padding-top: 6rem;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #999;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; 
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #8a8a8a;
+    text-shadow: none;
+    display: block;
+    transition: 0.3s
+} 
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #e3e3e3;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
