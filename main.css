@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url(assets/robotos%20h%C3%A1tt%C3%A9r.jpg6.jpg) no-repeat center/cover;
+	text-align: center;
+}
+
+#center {
+	padding-top: 13rem;
+}
+
+img {
+	width: 70%;
+}
+
+header h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2rem;
+	font-weight: 700;
+	text-shadow: 3px -5px 2px white;
+}
+
+/*
+span {
+	content: "\2913";
+	margin-top: 40rem;
+}
+*/
+
+@media (min-width: 768px) {
+
+	#center {
+		padding-top: 8rem;
+	}
+
+	header h1 {
+		text-shadow: 3px -5px 2px white;
+		font-size: 3rem;
+	}
+}
