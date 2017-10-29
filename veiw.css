@@ -6,98 +6,107 @@ html {
 	width: 100%;
 	height: 100%;
 }
+
 .sidenav {
-    height: 100%; 
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #29d4ff;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s; 
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #29d4ff;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #0025db;
-    text-shadow: none;
-    display: block;
-    transition: 0.3s
-} 
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #0025db;
+	text-shadow: none;
+	display: block;
+	transition: 0.3s
+}
 
-.sidenav a:hover, .offcanvas a:focus{
-    color: #29ffed;
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #29ffed;
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
 }
 
 #main {
-    transition: margin-left .5s;
-    padding: 20px;
+	transition: margin-left .5s;
+	padding: 20px;
 }
 
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}
+.sidenav {
+	padding-top: 15px;
+}
+
+.sidenav a {
+	font-size: 18px;
+}
 
 
 .nav {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+	width: 3rem;
+	height: .4rem;
+	background-color: #1aa8f4;
+	margin: 6px 0;
 }
-
 
 body {
 	background: url(assets/software16-crop-600x338.jpg) no-repeat center/cover fixed;
 	text-align: center;
 }
 
-#center {
-	padding-top: 15rem;
-}
-
 img {
 	width: 70%;
 }
 
+#center {
+	margin-top: 6rem;
+}
+
 header h1 {
 	font-family: 'Roboto Mono', monospace;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 700;
 	text-shadow: 2px -8px 4px #000;
 	line-height: 7rem;
 	color: #e5ffff;
+	position: absolute;
+	margin: 1rem;
+	animation: slide 8s;
 }
 
-	@media (min-width: 768px) {
-
-	#center {
-		padding-top: 14rem;
+@keyframes slide {
+	0% {
+		left: 200%;
 	}
+	35% {
+		right: 0;
+	}
+	65% {
+		left: 0;
+	}
+	100% {
+		left: 0;
+	}
+}
 
-
+@media (min-width: 768px) {
 	header h1 {
 		color: #e5ffff;
 		font-size: 5rem;
 	}
 }
-
-
-@media (min-width: 1024px) {
-
-	#center {
-		padding-top: 12rem;
-}
-	
-
